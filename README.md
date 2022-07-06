@@ -1,6 +1,6 @@
 # TIL
 memo.
 ### Git
-*  [git 기본 명령어](https://github.com/)
+*  [git checklist](https://github.com/buhyun1/TIL/blob/main/git.md/)
 
 
