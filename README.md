@@ -1,5 +1,5 @@
 # TIL
-공부 기록지!
+Today I Learned
 ### Git
 *  [git checklist](https://github.com/buhyun1/TIL/blob/main/git/git)
 
