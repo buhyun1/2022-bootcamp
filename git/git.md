@@ -42,12 +42,19 @@
 >```
 >`git branch` 깃에서 관리하는 작업트리를 다룰 수 있는 명령어
 > ```
->$ git branch 브랜치 목록을 불러온다.
->$ git branch <branch_name> 이름이 branch_name인 브랜치를 생성한다.  
+>$ git branch //브랜치 목록을 불러온다.
+>$ git branch <branch_name> //이름이 branch_name인 브랜치를 생성한다.  
 >```
 >`git stash` <br/>현재 작업중인 변경사항을 임시 공간에 저장해두기 위한 명령어<br/> 
 >현재 브랜치에서 발생한 변경사항들을 커밋해주지 않으면 브랜치 변경이 불가능한데<br/> 현재 변경사항을 커밋하고 싶진 않지만
 >브랜치는 변경하고 싶을 때 stash명령어를 통해 풀어나갈 수 있다.
+>```
+>$ git stash 
+>$ git stash list //stashed된 변경사항들의 목록을 불러온다.
+>$ git stash apply <stash_name> //stash_name stash를 불러온다. stash_name이 없다면 가장 최근의 stash를 불러온다.   
+>$ git stash drop <name> //name의 stash를 제거한다. name이 주어지지 않으면 가장 최근의 stash를 제거한다.  
+>$ git stash pop //apply와 동시에 drop을 해주는 명령어
+>```
 
 ### git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요?<br/> git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?<br/> 
 
