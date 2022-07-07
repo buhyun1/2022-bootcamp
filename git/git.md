@@ -13,7 +13,19 @@
 ### git과 GitHub은 어떻게 다를까요?<br/> 
 >`Git` 버전관리 툴,<br/> `GitHub` git을 이용한 서비스<br/> 
 ### git의 clone/add/commit/push/pull/branch/stash 명령은 무엇이며 어떨 때 이용하나요?<br/> 그리고 어떻게 사용하나요?<br/> 
-
+>`git clone` 원격 저장소의 데이터를 카피해오는 행위
+>```
+>$ git clone https://github.com/buhyun1/TIL.git
+>```
+>`git add` <br/>commit을 하기전에 변경된 사항들을 추가해나가는 행위<br/> git이 관리하도록 올리는 행위<br/>
+ git add 명령어를 통해 staging area에 변경사항들을 올릴 수 있다.<br/>
+>```
+>$ git add filename
+>작업 디렉토리 전체에서 변경된 사항들을 스테이징 에리어에 올려줌.
+>$ git add -A   
+>현재 디렉토리 하위에 있는 변경사항들만 스테이징 에리어에 올려줌.
+>$ git add . <br/>
+>```
 ### git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요?<br/> git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?<br/> 
 
 ### 리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야 할까요?
