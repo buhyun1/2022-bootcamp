@@ -21,11 +21,23 @@
  git add 명령어를 통해 staging area에 변경사항들을 올릴 수 있다.<br/>
 >```
 >$ git add filename
->작업 디렉토리 전체에서 변경된 사항들을 스테이징 에리어에 올려줌.
->$ git add -A   
->현재 디렉토리 하위에 있는 변경사항들만 스테이징 에리어에 올려줌.
->$ git add . <br/>
+>$ git add -A  //작업 디렉토리 전체에서 변경된 사항들을 스테이징 에리어에 올려줌.
+>$ git add . //현재 디렉토리 하위에 있는 변경사항들만 스테이징 에리어에 올려줌.
 >```
+>`git commit` 로컬 저장소에 staged된 변경사항들에 대하여 변경을 확정짓고 기록을 하는 행위.
+>```
+>$ git commit -m "commit message"
+>```
+>`git push` 로컬 저장소에 남은 기록들을 원격 저장소에 보내는 행위
+>```
+>$ git push <저장소명> <브랜치명>
+>$ git push origin master
+>$ git remote //<저장소명>은 아래 명령어로 확인할 수 있다.
+>$ git push -u origin master //-u 옵션은 최초 한번만 저장소명, 브랜치명을 입력하고 이후에는 git push만 사용해도 되게 해준다.  
+>$ git push -f origin master //가급적 사용하지 말것, -f 옵션으로 강제로 현재 로컬 저장소의 변경사항을 원격 저장소에 덮어씌우는 행위
+>```
+
+
 ### git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요?<br/> git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?<br/> 
 
 ### 리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야 할까요?
