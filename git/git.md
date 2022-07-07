@@ -36,7 +36,10 @@
 >$ git push -u origin master //-u 옵션은 최초 한번만 저장소명, 브랜치명을 입력하고 이후에는 git push만 사용해도 되게 해준다.  
 >$ git push -f origin master //가급적 사용하지 말것, -f 옵션으로 강제로 현재 로컬 저장소의 변경사항을 원격 저장소에 덮어씌우는 행위
 >```
-
+>`git pull` 원격저장소의 변경사항들을 로컬 저장소로 가져와 merge하는 행위, pull = (변경사항을 가져오는 fetch) + (가져온 변경사항을 적용하는 merge)
+>```
+>$ git pull
+>```
 
 ### git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요?<br/> git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?<br/> 
 
