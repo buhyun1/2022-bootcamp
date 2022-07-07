@@ -13,3 +13,14 @@ HTML 문서의 시작과 끝을 의미하는 태그로서 작성된 문서가 HT
 <BODY> ... </BODY>
 HTML 문서의 본문에 해당하는 곳으로 실제 화면에 나타나는 내용을 기술하는 부분입니다.
 즉, 사용자가 웹브라우저 상에 표현하고자 하는 내용들을 다양한 태그를 사용하여 구성하는 부분으로, 웹문서의 대부분을 차지하게 됩니다.
+
+text-align 속성은 텍스트의 정렬 방향을 의미합니다.
+left: 왼쪽 정렬
+right: 오른쪽 정렬
+center: 중앙 정렬
+justify: 양쪽 정렬 (자동 줄바꿈시 오른쪽 경계선 부분 정리)
+
+사용법
+#box1 { text-align: right; }
+#box2 { text-align: left; }
+#box3 { text-align: center; }
