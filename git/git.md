@@ -40,6 +40,11 @@
 >```
 >$ git pull
 >```
+>`git branch` 깃에서 관리하는 작업트리를 다룰 수 있는 명령어
+> ```
+>$ git branch 브랜치 목록을 불러온다.
+>$ git branch <branch_name> 이름이 branch_name인 브랜치를 생성한다.  
+>```
 
 ### git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요?<br/> git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?<br/> 
 
