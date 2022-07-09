@@ -1,0 +1,3 @@
+중앙정렬
+div = margin:0 auto;
+img, text = "text-align:center"
