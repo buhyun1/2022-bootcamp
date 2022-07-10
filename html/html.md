@@ -1,0 +1,45 @@
+<HTML> ... </HTML>
+HTML 문서의 시작과 끝을 의미하는 태그로서 작성된 문서가 HTML을 사용한 문서임을 나타냅니다.
+시작태그인 <HTML>은 앞쪽에, 종료태그인 </HTML>은 문서의 마지막에 두어 소스 전체를 감싸주어야합니다.
+즉, <HTML> 태그 안에<HEAD></HEAD>와 <BODY></BODY> 태그가 차례로 위치하게 됩니다.
+
+<HEAD> ... </HEAD>
+<HEAD>는 HTML 문서에 관한 기본 정보를 포함하고 있는 부분으로, 주로 문서의 제목, 제작자, 문서정보 등이 포함될 수 있습니다.
+<TITLE> - 문서 상단의 제목 설정
+<META> - 문서 정보 설정
+<script> - javascript 언어 등을 사용한 다양한 프로그램이 위치하는 공간이기도 합니다.
+<Style> - 문서의 장식
+
+<BODY> ... </BODY>
+HTML 문서의 본문에 해당하는 곳으로 실제 화면에 나타나는 내용을 기술하는 부분입니다.
+즉, 사용자가 웹브라우저 상에 표현하고자 하는 내용들을 다양한 태그를 사용하여 구성하는 부분으로, 웹문서의 대부분을 차지하게 됩니다.
+
+text-align 속성은 텍스트의 정렬 방향을 의미합니다.
+left: 왼쪽 정렬
+right: 오른쪽 정렬
+center: 중앙 정렬
+justify: 양쪽 정렬 (자동 줄바꿈시 오른쪽 경계선 부분 정리)
+
+사용법
+#box1 { text-align: right; }
+#box2 { text-align: left; }
+#box3 { text-align: center; }
+
+HTML에서 굵은 글씨, bold 체를 표현하는 방법
+<strong> 태그
+<b> 태그
+
+줄바꾸기
+<p> </p> 문단 나눌 때 사용
+<br> </br> 한줄공백 때 사용
+
+여백만들기
+&nbsp;
+
+
+<form> 태그의 action 속성은 폼 데이터(form data)를 서버로 보낼 때 해당 데이터가 도착할 URL을 명시합니다.
+
+
+<div style="text-align: center;">
+  
+<!DOCTYPE html>
