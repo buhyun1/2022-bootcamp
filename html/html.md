@@ -36,12 +36,13 @@
 ### 여백만들기
 >```&nbsp;```
 
-<form> 태그의 action 속성은 폼 데이터(form data)를 서버로 보낼 때 해당 데이터가 도착할 URL을 명시합니다.
-
-<div style="text-align: center;">
+### action
+><.form> 태그의 action 속성</br>
+>폼 데이터(form data)를 서버로 보낼 때 해당 데이터가 도착할 URL을 명시
   
-<!DOCTYPE html>
-
+### <.!DOCTYPE html>
+>DOCTYPE 선언은 HTML 태그는 아니지만</br>
+>선언된 페이지의 HTML 버전이 무엇인지를 웹 브라우저에 알려주는 역할을 하는 선언문
   
 HTML 표준의 역사는 어떻게 될까요?
 HTML 표준을 지키는 것은 왜 중요할까요?
