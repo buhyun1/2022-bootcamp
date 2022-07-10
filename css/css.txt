@@ -8,3 +8,6 @@ target="_blank"
 여백
 Margin은 Object와 화면과의 여백(외부여백)을 말하며
 Padding은 Object내의 내부여백을 의미합니다.
+
+칸 여백 정리
+padding-right
