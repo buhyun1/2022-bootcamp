@@ -86,15 +86,15 @@
 >요소가 원래 위치에 있을 때의 상하좌우로 부터 얼마나 떨어지게 할지를 지정<br>
  
 ```display```
->display: block;<br>
+>```display: block;```<br>
 >일반적으로 설정하지 않아도 div가 갖게되는 기본값<br>
 >쉽게 말하자면, 가로 한 줄을 다 차지하게 됩니다.<br>
->display: inline;<br>
+>```display: inline;```<br>
 >컨텐츠를 딱 감쌀정도의 크기<br>
 >block태그와 다르게 줄바꿈이 되지 않고, 반드시 컨텐츠를 감싸게 되고, 크기를 변화시킬 수 없습니다.<br>
  
->display: inline; 은 텍스트처럼<br>
->display: block; 은 쌓이는 상자처럼<br>
+>```display: inline;``` 은 텍스트처럼<br>
+>```display: block;``` 은 쌓이는 상자처럼<br>
  
 ### CSS Flexbox와 Grid
 >```Flex```는 1차원으로 수평, 수직 영역 중 하나의 방향으로만 레이아웃을 나눌 수 있음<br>
@@ -111,11 +111,11 @@
 > padding-right<br>
 
 ### 이미지 조절
->positon: absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 함.<br>
->width: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 함. 이때, 가로 길이는 < div class='container' >에 설정한 width.<br>
->height: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 함. 이때, 세로 길이는 < div class='container' >에 설정한 height.<br>
->width: 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어남.<br>
->top: 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킴.<br>
+>```positon``` absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 함.<br>
+>```width``` 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 함. 이때, 가로 길이는 < div class='container' >에 설정한 width.<br>
+>```height``` 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 함. 이때, 세로 길이는 < div class='container' >에 설정한 height.<br>
+>```width``` 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어남.<br>
+>```top``` 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킴.<br>
 
 ### checklist
 ---
