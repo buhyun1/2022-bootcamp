@@ -1,5 +1,4 @@
 ### CSS의 기초 문법
-Inline, <style>, <link rel="stylesheet" href="...">
 
 >h1 { color: red }  <br>
 >h1, color, red 세 개의 단어가 있는데 각각 선택자, 속성, 값이라고 합니다.<br>
@@ -12,9 +11,9 @@ Inline, <style>, <link rel="stylesheet" href="...">
  
 ### CSS 적용하는 방법  
   <Strong>Inline style</strong>
->display 속성이 ```inline```으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치됩니다. <br>
+>display 속성이 ```inline```으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 <br>
 >대표적인 inline 엘리먼트로 <.span>이나 <.a>, <.em> 태그 등을 들 수 있습니다.<br><br>
->display 속성이 ```block```으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지합니다. <br>
+>display 속성이 ```block```으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 <br>
 >대표적인 block 엘리먼트로 <.div>이나 <.p>, <.h1> 태그 등을 들 수 있습니다.
 ```
   ex)
@@ -45,7 +44,20 @@ Inline, <style>, <link rel="stylesheet" href="...">
 
 </head>
 ```  
-### CSS 규칙의 우선순위
+ <Strong>External style sheet</strong>
+>외부 스타일 시트를 이용하는 방법은 웹 사이트 전체의 스타일을 하나의 파일에서 변경할 수 있도록 함<br>
+>외부에 작성된 이러한 스타일 시트 파일은 .css 확장자를 사용하여 저장<br>
+>스타일을 적용할 웹 페이지의 <head>태그에 <link>태그를 사용하여 외부 스타일 시트를 포함해야만 스타일이 적용
+ ```
+ ex)
+<head>
+
+    <link rel="stylesheet" href="/examples/media/expand_style.css">
+
+</head>
+ ```
+
+ ### CSS 규칙의 우선순위
   
 ### 박스 모델과 레이아웃 요소
   박스 모델: width, height, margin, padding, border, box-sizing
