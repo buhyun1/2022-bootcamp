@@ -96,8 +96,10 @@
 >display: inline; 은 텍스트처럼<br>
 >display: block; 은 쌓이는 상자처럼<br>
  
-CSS Flexbox와 Grid
-
+### CSS Flexbox와 Grid
+>```Flex```는 1차원으로 수평, 수직 영역 중 하나의 방향으로만 레이아웃을 나눌 수 있음<br>
+>```Grid```는 2차원으로 수평 수직을 동시에 영역을 나눌 수 있음<br>
+ 
 ### 중앙정렬
 >div = margin:0 auto;<br>
 >img, text = "text-align:center"
