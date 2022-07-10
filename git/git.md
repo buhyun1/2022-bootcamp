@@ -66,3 +66,4 @@
 >첫번째 ```git reset``` 을 사용해 커밋을 취소하는 방식<br/>
 >두번째 ```git revert``` 를 사용해 커밋 내용을 되돌리는 방식<br/>
  
+참고 사이트 https://www.yalco.kr/lectures/git-github/
