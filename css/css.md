@@ -12,9 +12,9 @@
 ### CSS 적용하는 방법  
   <Strong>Inline style</strong>
 >display 속성이 ```inline```으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 <br>
->대표적인 inline 엘리먼트로 <.span>이나 <.a>, <.em> 태그 등을 들 수 있습니다.<br><br>
+>대표적인 inline 엘리먼트로 <.span>이나 <.a>, <.em> 태그 등 있음.<br><br>
 >display 속성이 ```block```으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 <br>
->대표적인 block 엘리먼트로 <.div>이나 <.p>, <.h1> 태그 등을 들 수 있습니다.
+>대표적인 block 엘리먼트로 <.div>이나 <.p>, <.h1> 태그 등 있음
 ```
   ex)
   <body>
@@ -65,11 +65,38 @@
 >4. .클래스, :추상클래스 로 지정한 속성<br>
 >5. 태그이름 으로 지정한 속성<br>
 >6. 상위 객체에 의해 상속된 속성<br>
+ 
+### 박스 모델
+ 
+ ```
+1. 내용(content) : 텍스트나 이미지가 들어있는 박스의 실질적인 내용 부분입니다.
 
-### 박스 모델과 레이아웃 요소
-  박스 모델: width, height, margin, padding, border, box-sizing
-  position, left, top, display
-  CSS Flexbox와 Grid
+2. 패딩(padding) : 내용과 테두리 사이의 간격입니다. 패딩은 눈에 보이지 않습니다.
+
+3. 테두리(border) : 내용와 패딩 주변을 감싸는 테두리입니다.
+
+4. 마진(margin) : 테두리와 이웃하는 요소 사이의 간격입니다. 마진은 눈에 보이지 않습니다.
+ ```
+ 
+### 레이아웃 요소 
+```position```<br>
+><relative>  
+>요소를 원래 위치를 기준으로 상대적(relative)으로 배치<br>
+>요소의 위치 지정은 top, bottom, left, right 속성을 이용<br>
+>요소가 원래 위치에 있을 때의 상하좌우로 부터 얼마나 떨어지게 할지를 지정<br>
+ 
+```display```
+>display: block;<br>
+>일반적으로 설정하지 않아도 div가 갖게되는 기본값<br>
+>쉽게 말하자면, 가로 한 줄을 다 차지하게 됩니다.<br>
+>display: inline;<br>
+>컨텐츠를 딱 감쌀정도의 크기<br>
+>block태그와 다르게 줄바꿈이 되지 않고, 반드시 컨텐츠를 감싸게 되고, 크기를 변화시킬 수 없습니다.<br>
+ 
+>display: inline; 은 텍스트처럼<br>
+>display: block; 은 쌓이는 상자처럼<br>
+ 
+CSS Flexbox와 Grid
 
 ### 중앙정렬
 >div = margin:0 auto;<br>
@@ -78,21 +105,17 @@
 ### 새창에서 a태그 열기
 >target="_blank"<br>
 
-### 여백
->Margin은 Object와 화면과의 여백(외부여백)을 말하며<br>
->Padding은 Object내의 내부여백을 의미합니다.
-
-# 칸 여백 정리
+### 칸 여백 정리
 > padding-right<br>
 
-# 이미지 조절
->positon: absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 한다.<br>
->width: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 한다. 이때, 가로 길이는 < div class='container' >에 설정한 width이다.<br>
->height: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 한다. 이때, 세로 길이는 < div class='container' >에 설정한 height이다.<br>
->width: 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어난다.<br>
->top: 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킨다.<br>
+### 이미지 조절
+>positon: absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 함.<br>
+>width: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 함. 이때, 가로 길이는 < div class='container' >에 설정한 width.<br>
+>height: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 함. 이때, 세로 길이는 < div class='container' >에 설정한 height.<br>
+>width: 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어남.<br>
+>top: 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킴.<br>
 
-checklist
+### checklist
 ---
 CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?
 세 가지 방법 각각의 장단점은 무엇일까요?
