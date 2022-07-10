@@ -57,33 +57,40 @@
 </head>
  ```
 
- ### CSS 규칙의 우선순위
-  
+### CSS 규칙의 우선순위
+ 
+>1. 속성 값 뒤에 !important 를 붙인 속성<br>
+>2. HTML에서 [style]을 직접 지정한 속성<br>
+>3. #id 로 지정한 속성<br>
+>4. .클래스, :추상클래스 로 지정한 속성<br>
+>5. 태그이름 으로 지정한 속성<br>
+>6. 상위 객체에 의해 상속된 속성<br>
+
 ### 박스 모델과 레이아웃 요소
   박스 모델: width, height, margin, padding, border, box-sizing
   position, left, top, display
   CSS Flexbox와 Grid
 
-중앙정렬
-div = margin:0 auto;
-img, text = "text-align:center"
+### 중앙정렬
+>div = margin:0 auto;<br>
+>img, text = "text-align:center"
 
-새창에서 a태그 열기
-target="_blank"
+### 새창에서 a태그 열기
+>target="_blank"<br>
 
-여백
-Margin은 Object와 화면과의 여백(외부여백)을 말하며
-Padding은 Object내의 내부여백을 의미합니다.
+### 여백
+>Margin은 Object와 화면과의 여백(외부여백)을 말하며<br>
+>Padding은 Object내의 내부여백을 의미합니다.
 
-칸 여백 정리
-padding-right
+# 칸 여백 정리
+> padding-right<br>
 
-이미지 조절
-positon: absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 한다.
-width: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 한다. 이때, 가로 길이는 < div class='container' >에 설정한 width이다.
-height: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 한다. 이때, 세로 길이는 < div class='container' >에 설정한 height이다.
-width: 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어난다.
-top: 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킨다.
+# 이미지 조절
+>positon: absoulte;는 position: relative 속성을 가지는 가장 가까운 요소를 기준으로 절대적인 위치를 가지도록 한다.<br>
+>width: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 가로폭을 기준으로 세로 길이가 잘리도록 한다. 이때, 가로 길이는 < div class='container' >에 설정한 width이다.<br>
+>height: 100%;는 삽입된 이미지의 가로세로비를 유지한 채, 세로폭을 기준으로 가로 길이가 잘리도록 한다. 이때, 세로 길이는 < div class='container' >에 설정한 height이다.<br>
+>width: 100%;와 height: 100%; 를 모두 입력하면 삽입된 이미지의 가로세로비가 망가지더라도 < div class='container' >에 설정한 width와 height 길이만큼 늘어난다.<br>
+>top: 50%;, left: 50%;, transform: translate(-50%, -50%);는 < img >태그를 < div class='container' > 안에서 가운데 정렬시킨다.<br>
 
 checklist
 ---
