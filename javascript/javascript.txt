@@ -28,3 +28,5 @@ div.append('hi')
 
 // 결과 : <div>hi</div>
 위 코드처럼 append()메서드는 노드 객체가 아닌 text 추가가 가능하다
+
+<script src="./ToDoList.js"></script> js연결 문장
