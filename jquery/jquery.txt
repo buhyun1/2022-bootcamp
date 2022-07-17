@@ -83,3 +83,9 @@ $(document).ready(function(){
 
 }):
 이렇게 html 문서와 jQuery문이 있다면 사용자가 클릭한 li가 $(this)가 된다.
+
+.attr( attributeName )
+선택한 요소의 속성의 값을 가져옵니다. 예를 들어
+
+$( 'div' ).attr( 'class' );
+는 div 요소의 class 속성의 값을 가져옵니다.
