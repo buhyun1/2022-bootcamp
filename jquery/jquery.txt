@@ -45,3 +45,41 @@ on은
 live의 가장 큰 특징은
 1. 아직 생성되지 않은 엘리먼트에도 미리 이벤트를 걸어둘수 있다!!!
 2. 1.7버전 이후로는 사용되지 않는다..
+
+
+첫번째의 경우 
+ 
+$(document).ready(function(){ ...
+});
+-> window.onload = function() {}과 같은 기능
+ 
+두번째의 경우
+ 
+$(function(){  ..
+}); 
+그냥 함수를 실행하라는 의미 입니다.
+ 
+세번째의 경우
+ 
+(function($){
+})(jQuery);
+ 
+이경우는 Jquery를 사용할 때, $ 달러의 의미를 jquery에서 사용하겠다는 의미가 내포되어 있습니다.
+즉, $를 jquery만 사용하는 것이 아니라 다른 라이브러리에서도 사용할 수 있기 때문이에요.
+만약 prototype.js 랑 jquery를 같이 사용하는 경우에는  $가 충돌이 발생하는 것입니다.
+
+$(this)
+<ul class="list">
+  <li>내용1</li>
+  <li>내용2</li>
+  <li>내용3</li>
+  <li>내용4</li>
+</ul>
+$(document).ready(function(){
+  
+  $('#list li).click(function(){
+    	$(this).css({backgroundColor : 'red'});
+    });
+
+}):
+이렇게 html 문서와 jQuery문이 있다면 사용자가 클릭한 li가 $(this)가 된다.
