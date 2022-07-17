@@ -89,3 +89,9 @@ $(document).ready(function(){
 
 $( 'div' ).attr( 'class' );
 는 div 요소의 class 속성의 값을 가져옵니다.
+
+element.setAttribute( 'attributename', 'attributevalue' )
+attributename에는 속성 이름을, attributevalue에는 속성값을 넣습니다.
+
+ function(e)의 용도가 정확히 뭔가요?
+ event 관련 object를 받는 argument다
