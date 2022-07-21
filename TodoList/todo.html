@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoList</title>
+  <!-- <style >
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    /* background-image: linear-gradient(180deg, #487eb0, #ffffff); */
+    min-height: 100vh;
+  }
+  
+  .container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .txt{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 5%;
+    padding: 0.5%;
+  }
+  
+  h3{
+    margin: 30px 0;
+  }
+  .task{
+    width:100%;
+    background: rgba(255,255,255,0.5);
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .done .task{
+    background: rgba(0,0,0,0.5);
+    color : #fff;
+  }
+</style> -->
+</head>
+<body>
+  <div class="container">
+    <input type="text" placeholder="내용을 입력해주세요." class ="txt">
+    
+    <div class="notdone"> 
+      <h3>To Do List</h3>
+      
+    </div>
+    
+    <div class="done"> 
+      <h3>Done</h3>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(".txt").on("keyup",function(e){
+    
+      if(e.keyCode == 13 && $(".txt").val() != ""){
+      
+        //Task에 입력 값 넣기
+        var task = $("<div class='task'></div>").text($(".txt").val());
+        
+        //삭제버튼
+        var del = $("<i class='icon ion-ios-trash'></i>").click(function(){
+          var p = $(this).parent();
+          p.fadeOut(function(){
+            p.remove();
+          })
+        });
+        
+        //체크 버튼
+        var check = $("<i class='icon ion-md-checkmark'></i>").click(function(){
+          var p = $(this).parent();
+          p.fadeOut(function(){
+            $(".done").append(p);
+            p.fadeIn();
+          })
+          $(this).remove();
+        });
+        
+        //Task에 삭제 & 체크 버튼 추가하기
+        task.append(del,check)
+      
+        //할일 목록에 추가
+        $(".notdone").append(task);
+        
+        //입력 창 비우기
+        $(".txt").val("");
+      }
+    })
+  </script>
+</body>
+</html>
+

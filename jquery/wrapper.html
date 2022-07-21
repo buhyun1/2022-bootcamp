@@ -1,0 +1,41 @@
+<script type="text/javascript">
+//$ 대신 jQuery를 사용
+jQuery('body').html('hello world');
+</script>
+
+<script type="text/javascript">
+//$를 함수의 지역변수로 선언해서 외부에 있을지 모르는 타 라이브러리의 $와의 충돌을 예방
+(function($){
+    $('body').html('hello world');
+})(jQuery)
+</script>
+
+<!-- 예제 1. jQuery( selector, [context] ) -->
+<html>
+    <body>
+        <ul>
+            <li>test2</li>
+        </ul>
+        <ul class="foo">
+            <li>test</li>
+        </ul>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            (function($){
+                $('ul.foo').click( function() {
+                    $('li', this).css('background-color','red');
+                });
+            })(jQuery)
+        </script>
+    </body>
+</html>
+
+<!-- 예제 2. jQuery( element ) -->
+<html>
+    <body>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document.body).css( "background-color", "black" );
+        </script>
+    </body>
+</html>
