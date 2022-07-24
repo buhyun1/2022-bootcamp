@@ -1,19 +1,25 @@
 
     
-        html{
+        body{
         text-align: center;
         background:rgb(255, 237, 192);
         }
         
-        ul li {list-style-type: none;}
+        #list li {
+            list-style-type: none;
+        }
 
+        #deletebtn {
+            float: center;
+        }
         #input {
             width: 300px;
             height: 30px;
             border: 1px solid gray;
             font-size: 15px;
             vertical-align: middle;
-            border-radius: 10px;
+            border-radius: 10px 30px 15px 20px; 
+            /* //4방향 사용 가능  */
         }
         #list {
             margin-top:25px;
